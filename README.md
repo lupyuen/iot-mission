@@ -165,6 +165,8 @@ Rust has a steep learning curve. Maybe newbies can learn Rust through Visual Rus
 
 ## [8] Current Projects
 
+Now that we have fixed every link of the IoT Chain, let's validate!
+
 ### PineTime Smart Watch
 
 1. [_"Sneak Peek of PineTime Smart Watch… And why it’s perfect for teaching IoT"_](https://medium.com/@ly.lee/sneak-peek-of-pinetime-smart-watch-and-why-its-perfect-for-teaching-iot-81b74161c159?source=friends_link&sk=d9301466f5499bece3e7b638e99ec20d)
