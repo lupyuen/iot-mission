@@ -13,11 +13,13 @@ I teach IoT because...
 
 1. [_"IoT is a Bad Word"_](https://medium.com/@ly.lee/iot-is-a-bad-word-9003d9fab638?source=friends_link&sk=f7d58ebca338f326b6be8dcb79c7d6f5)
 
-IoT is difficult because... Just see the expansive scope in the sketch above! 5 years ago I decided to fix every link in the IoT chain so that we can create really useful and affordable IoT gadgets. Let's start backwards (right to left)... 
+IoT is difficult because... Just see the expansive scope in the sketch above! And we are creating too many expensive IoT gadgets at low volume that don't solve any business problems... "Technology Waiting For A Problem To Solve"
+
+5 years ago I decided to fix every link in the IoT chain so that we can create really useful and affordable IoT gadgets... The Lean and Agile Way. Let's start backwards (right to left)...
 
 ## [2] IoT Cloud
 
-IoT Clouds are already stable and mature. Like Amazon Web Services...
+IoT Clouds are already stable and mature, no problem there. I used to be an Enterprise Architect at NCS so I know that all the tools in the cloud will work fine for IoT.  Like Amazon Web Services...
 
 1. [_"Push AWS IoT sensor data to Redshift with Kinesis Firehose"_](https://medium.com/@ly.lee/push-aws-iot-sensor-data-to-redshift-with-kinesis-firehose-385506264a00?source=friends_link&sk=bd45be8b48fbb328ed1d65d10a8d7c38)
 
@@ -25,7 +27,7 @@ IoT Clouds are already stable and mature. Like Amazon Web Services...
 
 1. [_"Connecting AWS Lambda Node.JS to Redshift or PostgreSQL? Try AWS Lambda Layers!"_](https://medium.com/@ly.lee/connecting-aws-lambda-node-js-to-redshift-or-postgresql-try-aws-lambda-layers-78e60c27f39b?source=friends_link&sk=84d0f78bddfece6049c2395741824e58)
 
-thethings.io...
+thethings.io, which has simple useful dashboards and easy integration with JavaScript in the cloud...
 
 1. [_"Visualising BBC micro:bit sensors with thethings.iO"_](https://medium.com/@ly.lee/visualising-bbc-micro-bit-sensors-with-thethings-io-5689fb613531?source=friends_link&sk=a8cfc404362ecbe3a26823f6a70fa5cb)
 
@@ -33,17 +35,21 @@ thethings.io...
 
 1. [_"Realtime sensor data processing with thethings.io and Amazon Web Services Kinesis"_](https://medium.com/coinmonks/realtime-sensor-data-processing-with-thethings-io-and-amazon-web-services-kinesis-e12ebb022106?source=friends_link&sk=a57d58d346c283c79699efe384bca299)
 
-Google Cloud...
+Google Cloud, probably the cheapest cloud out of the big 3 (AWS, Azure, Google)...
 
 1. [_"How To Build Your Sigfox Server (Version 1.0)"_](https://medium.com/@ly.lee/how-to-build-your-sigfox-server-version-1-0-6763732692fd?source=friends_link&sk=641f65c458ec59fa27dddbe7735b118a)
 
-Alibaba Cloud...
+Alibaba Cloud, if you need something even cheaper, or if your IoT gadget must operate in China (because other clouds may be blocked)...
 
 1. [_"First Impressions of Alibaba Cloud (Aliyun)"_](https://medium.com/@ly.lee/first-impressions-of-alibaba-cloud-aliyun-688dc46fa9b8?source=friends_link&sk=0685f5028f4ce9575dfae9cc9515143d)
 
+Also check out [Grafana](https://grafana.com/), the open source dashboard tool, and [Prometheus](https://prometheus.io/), the open source time-series database. Both are cloud analytics tools that were created for enterprises but work well for IoT too.
+
+Beyond that we have cloud-based machine learning, predictive analytics, ... Many useful enterprise tools that we may repurpose for IoT. So the IoT Cloud is not a problem.
+
 ## [3] IoT Network
 
-I taught IoT with the Sigfox network...
+I taught IoT with the Sigfox network in Singapore. The charges for sending and receiving messages are ridiculously low (few dollars per year per device). Though the messages are small (12 bytes) and infrequent (140 messages per day). Perfect for teaching IoT... 
 
 1. [_"Sigfox Teacher Answers Your Questions"_](https://medium.com/@ly.lee/sigfox-teacher-answers-your-questions-7e47122716dc?source=friends_link&sk=7668c0b2ecc6333cd60ff8e536501ebd)
 
@@ -55,17 +61,19 @@ I taught IoT with the Sigfox network...
 
 1. [_"連接 BBC micro:bit 與 Sigfox 物聯網"_](https://medium.com/@ly.lee/%E9%80%A3%E6%8E%A5-bbc-micro-bit-%E8%88%87-sigfox-%E7%89%A9%E8%81%AF%E7%B6%B2-36b0d453151e?source=friends_link&sk=ad9099aabefe2a09ad4956589773621f)
 
-And later moved to NB-IoT network, to prove that it's stable and easy to use...
+...Except that the Sigfox developer kits are expensive, bulky (Arduino Shield), and limited in choice. Impossible to create a cheap prototype of an IoT gadget and commercialise for mass production. (Remember that Sigfox network is not available in China, the manufacturing powerhouse.) Here's my painful attempt (50% success rate)...
+
+1. [_"Making my first ever PCB with Seeed Fusion PCB assembly service"_](https://medium.com/coinmonks/making-my-first-ever-pcb-with-seeed-fusion-pcb-assembly-service-9af5736016b3?source=friends_link&sk=4a66b1086f3232f2022c9c6a3bff0523)
+
+And for some odd reason, government agencies and companies were reluctant to test IoT concepts on Sigfox even though it's available nationwide ("non-standard"). Incredibly frustrated, I gave up and moved on. (Remember: Lean and Agile!)
+
+Later the NB-IoT ("standard") network became available in Singapore through StarHub, Singtel and M1. The telcos didn't provide much help for using their NB-IoT networks, so I created the missing docs...
 
 1. [_"Get Started with NB-IoT and Quectel modules"_](https://medium.com/@ly.lee/get-started-with-nb-iot-and-quectel-modules-6e7c581e0d61?sk=40ece196fc51f7a2903c9981f46efa46)
 
 1. [_"Connect STM32 Blue Pill to NB-IoT with Quectel BC95-G and Apache Mynewt"_](https://medium.com/@ly.lee/connect-stm32-blue-pill-to-nb-iot-with-quectel-bc95-g-and-apache-mynewt-c99a9d8417a9?source=friends_link&sk=34fb9befbea42e98cb5942d66f594027)
 
 1. [_"Low Power NB-IoT on STM32 Blue Pill with Apache Mynewt and Embedded Rust"_](https://medium.com/@ly.lee/low-power-nb-iot-on-stm32-blue-pill-with-apache-mynewt-and-embedded-rust-cef5a3ecdd90?source=friends_link&sk=e232e68dc7c91dd4397e96d7dbde543a)
-
-1. [_"Quick Peek of Huawei LiteOS with NB-IoT on Ghostyu NB-EK-L476 Developer Kit (STM32L476RCT6)"_](https://medium.com/@ly.lee/quick-peek-of-huawei-liteos-with-nb-iot-on-ghostyu-nb-ek-l476-developer-kit-2bbfb7f2fbcc?source=friends_link&sk=37f71270cd52f497fb6fb8139917031c)
-
-1. [_"Build an NB-IoT GPS Tracker on STM32 L476 with Apache Mynewt and Embedded Rust"_](https://medium.com/@ly.lee/build-an-nb-iot-gps-tracker-on-stm32-l476-with-apache-mynewt-and-embedded-rust-8c095a925546?source=friends_link&sk=f3e802795d4fd7d569f0d67679e8c9e6)
 
 ## [4] Transceivers
 
@@ -75,15 +83,19 @@ My first experience creating hardware...
 
 1. [_"Making my first ever PCB with Seeed Fusion PCB assembly service"_](https://medium.com/coinmonks/making-my-first-ever-pcb-with-seeed-fusion-pcb-assembly-service-9af5736016b3?source=friends_link&sk=4a66b1086f3232f2022c9c6a3bff0523)
 
-But making gagdets at low volume is very expensive. This is the "Minimum Order Quantity" problem...
+Learnt that making IoT gagdets at low volume is very expensive. This is the "Minimum Order Quantity" problem. Always repurpose somebody else's hardware whenever possible, don't create new hardware! Make up for it with really good firmware.
 
 1. [_"Why electronic does not mean china and why 5$ IoT is for Chinese?"_](https://www.disk91.com/2017/news/technologies/why-electronics-does-not-means-china-and-why-5-iot-is-for-china/) by Paul Pinault
 
-That's why I chose NB-IoT transceivers. China creates so many cheap NB-IoT developer boards and sensors...
+Best benchmark for checking whether a particular technology (like NB-IoT) is mature and cheap to manufacture (in China): Just search Taobao. Look at the sheer number of affordable NB-IoT Developer Kits available, some even have programmable STM32 microcontrollers and onboard GPS!
 
-1. [_"Get Started with NB-IoT and Quectel modules"_](https://medium.com/@ly.lee/get-started-with-nb-iot-and-quectel-modules-6e7c581e0d61?sk=40ece196fc51f7a2903c9981f46efa46)
+1. [_"Quick Scan of NB-IoT STM32 Dev Kits on Taobao"_](https://docs.google.com/document/d/1V96zQc8PbxuxEwsdd3wzEb7SxpDhbSsOOP6faiFPfzo/edit?usp=sharing)
 
-1. [_"Connect STM32 Blue Pill to NB-IoT with Quectel BC95-G and Apache Mynewt"_](https://medium.com/@ly.lee/connect-stm32-blue-pill-to-nb-iot-with-quectel-bc95-g-and-apache-mynewt-c99a9d8417a9?source=friends_link&sk=34fb9befbea42e98cb5942d66f594027)
+1. [_"Quick Peek of Huawei LiteOS with NB-IoT on Ghostyu NB-EK-L476 Developer Kit (STM32L476RCT6)"_](https://medium.com/@ly.lee/quick-peek-of-huawei-liteos-with-nb-iot-on-ghostyu-nb-ek-l476-developer-kit-2bbfb7f2fbcc?source=friends_link&sk=37f71270cd52f497fb6fb8139917031c)
+
+1. [_"Build an NB-IoT GPS Tracker on STM32 L476 with Apache Mynewt and Embedded Rust"_](https://medium.com/@ly.lee/build-an-nb-iot-gps-tracker-on-stm32-l476-with-apache-mynewt-and-embedded-rust-8c095a925546?source=friends_link&sk=f3e802795d4fd7d569f0d67679e8c9e6)
+
+My choice today for IoT Network: NB-IoT. Works well worldwide with few gotchas. Strangely low adoption for such good technology. But please don't ask your telco for a trial NB-IoT SIM (ask me why)
 
 ## [5] Sensors
 
