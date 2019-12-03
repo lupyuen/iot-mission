@@ -161,15 +161,15 @@ C programming is hard... Especially C Pointers! MicroPython is too big to run on
 
 1. [_"[Work In Progress] STM32 Blue Pill Visual Programming with MakeCode, CODAL and libopencm3"_](https://medium.com/@ly.lee/work-in-progress-stm32-blue-pill-visual-programming-with-makecode-codal-and-libopencm3-422d308f252e?source=friends_link&sk=b39519335652415d5f4aa17c9e4af1d2)
 
-Why not switch from C to Rust, the safer, modern alternative? We can run pure Embedded Rust...
+Why not switch from C to Rust, the safer, modern alternative? The Rust compiler stops you from using bad pointers (unless you mark it `unsafe`). It compiles into efficient Arm machine code. Works well with C libraries and drivers (like Mynewt). And well supported by open-source coding tools like Visual Studio Code. We can run pure Embedded Rust...
 
 1. [_"Coding the STM32 Blue Pill with Rust and Visual Studio Code"_](https://medium.com/coinmonks/coding-the-stm32-blue-pill-with-rust-and-visual-studio-code-b21615d8a20?source=friends_link&sk=9ca2ff6ad73ae7330bc122d73e94e83f)
 
-Or host Rust on an embedded OS like FreeRTOS...
+Or run Rust on top of an embedded OS like FreeRTOS...
 
 1. [_"Running Rust and FreeRTOS on the PADI IoT Stamp"_](https://medium.com/coinmonks/running-rust-and-freertos-on-the-padi-iot-stamp-fb36c5ef4844?source=friends_link&sk=e89306e593d2781bbb272c0779eb5c24)
 
-I decided to host Rust on Apache Mynewt embedded OS...
+I decided to run Rust on top of Apache Mynewt embedded OS, because it's a modern, mature and reliable OS...
 
 1. [_"Hosting Embedded Rust apps on Apache Mynewt with STM32 Blue Pill"_](https://medium.com/@ly.lee/hosting-embedded-rust-apps-on-apache-mynewt-with-stm32-blue-pill-c86b119fe5f?source=friends_link&sk=f58f4cf6c608fded4b354063e474a93b)
 
@@ -177,7 +177,7 @@ I decided to host Rust on Apache Mynewt embedded OS...
 
 1. [_"Rust Rocks NB-IoT! STM32 Blue Pill with Quectel BC95-G on Apache Mynewt"_](https://medium.com/@ly.lee/rust-rocks-nb-iot-stm32-blue-pill-with-quectel-bc95-g-on-apache-mynewt-ef62a7e28f7e?source=friends_link&sk=aaa21371f68a07c543066b6b89a760f0)
 
-Rust has a steep learning curve. Maybe newbies can learn Rust through Visual Rust...
+Rust has a steep learning curve. My advice: Start coding in Rust the simple, C-like way. Then learn the harder Rust parts (borrowing, generics, traits) and clean up your code. Maybe one day newbies can learn Rust through Visual Rust...
 
 1. [_"Visual Embedded Rust Programming with Visual Studio Code"_](https://medium.com/@ly.lee/visual-embedded-rust-programming-with-visual-studio-code-1bc1262e398c?source=friends_link&sk=222de63e45993aacd0db5a2e4b1f33c7)
 
@@ -185,7 +185,7 @@ Rust has a steep learning curve. Maybe newbies can learn Rust through Visual Rus
 
 1. [_"Visual Programming with Embedded Rust? Yes we can with Apache Mynewt and Google Blockly!"_](https://medium.com/@ly.lee/visual-programming-with-embedded-rust-yes-we-can-with-apache-mynewt-and-google-blockly-8b67ef7412d7?source=friends_link&sk=353fb92b6f20ebf885ff5c9be44fd6f2)
 
-My choice for Embedded Programming: Rust with Apache Mynewt on STM32 Blue Pill or Nordic nRF52
+My choice for Embedded Programming: Rust with Apache Mynewt on STM32 Blue Pill or Nordic nRF52, plus Visual Studio Code. Programming for drivers may still need C. I'm keen to roll out Visual Rust but it's hard for me to do this alone.  Lemme know if you can help!
 
 ## [8] Current Projects
 
