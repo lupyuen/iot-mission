@@ -19,7 +19,7 @@ IoT is difficult because... Just look at the expansive scope in the sketch above
 
 ## [2] IoT Cloud
 
-IoT Clouds are already stable and mature, no problem there. I used to be an Enterprise Architect at NCS so I know that all the tools in the cloud will work fine for IoT.  Like Amazon Web Services...
+IoT Clouds are already stable and mature, no problem there. I used to be an Enterprise Architect at NCS so I know that all the tools in the cloud will work fine for IoT.  Like Amazon Web Services, the premium, most expensive cloud...
 
 1. [_"Push AWS IoT sensor data to Redshift with Kinesis Firehose"_](https://medium.com/@ly.lee/push-aws-iot-sensor-data-to-redshift-with-kinesis-firehose-385506264a00?source=friends_link&sk=bd45be8b48fbb328ed1d65d10a8d7c38)
 
@@ -43,7 +43,7 @@ Alibaba Cloud, if you need something even cheaper, or if your IoT gadget must op
 
 - [_"First Impressions of Alibaba Cloud (Aliyun)"_](https://medium.com/@ly.lee/first-impressions-of-alibaba-cloud-aliyun-688dc46fa9b8?source=friends_link&sk=0685f5028f4ce9575dfae9cc9515143d)
 
-Also check out [Grafana](https://grafana.com/), the open source dashboard tool, and [Prometheus](https://prometheus.io/), the open source time-series database. Both are cloud analytics tools that were created for enterprises but work well for IoT too.
+Also check out [Grafana](https://grafana.com/), the open source dashboard tool, and [Prometheus](https://prometheus.io/), the open source time-series database. Both are analytics tools that were created for enterprises but work well for IoT too.
 
 Beyond that we have cloud-based machine learning, predictive analytics, ... Many useful enterprise tools that we may repurpose for IoT. So the IoT Cloud is not a problem.
 
@@ -123,7 +123,7 @@ We need proper multitasking. I started with cocoOS, a lightweight cooperative (c
 
 1. [_"Juggling STM32 Blue Pill For Arduino Jugglers"_](https://medium.com/coinmonks/juggling-stm32-blue-pill-for-arduino-jugglers-edf6820dc808?source=friends_link&sk=7e812ce3062e69447d8ada7416f1ba9f)
 
-With a cooperative task scheduler like cocoOS, the firmware needs to be designed carefully before building. Which could be a problem if you're not an embedded software architect. So I switched to an open source Real Time Operating System that supports preemptive multitasking: [Apache Mynewt](https://mynewt.apache.org/)...
+With a cooperative task scheduler like cocoOS, the firmware needs to be designed carefully before coding. Which could be a problem if you're not an embedded software architect. So I switched to an open source Real Time Operating System that supports preemptive multitasking: [Apache Mynewt](https://mynewt.apache.org/)...
 
 1. [_"Create your IoT gadget with Apache Mynewt and STM32 Blue Pill"_](https://medium.com/@ly.lee/create-your-iot-gadget-with-apache-mynewt-and-stm32-blue-pill-d689b3ca725?source=friends_link&sk=d511426d5a2217ebd06789b3eef7df54)
 
@@ -135,17 +135,25 @@ With a cooperative task scheduler like cocoOS, the firmware needs to be designed
 
 Mynewt is easy to customise in C, I created my own drivers for NB-IoT, ESP8266, low power support. Built-in support for CoAP, JSON and CBOR, perfect for NB-IoT. Small footprint, runs well on STM32 Blue Pill (which has 64 KB Flash ROM, 20 KB RAM) and Nordic nRF52. Also check out [Zephyr](https://www.zephyrproject.org/), a modern open source RTOS that is supported by the microcontroller companies: STMicro, Nordic, NXP, ...
 
-My choice for embedded OS: __Apache Mynewt__
+My choice for Real Time OS: __Apache Mynewt__
 
-## [7] Embedded Programming
+## [7] Microcontrollers
 
 Arduino Uno is a Dead End for IoT Education: Hard to create afforable commercial products at volume. (Same for BBC micro:bit.) And Bit-Banging code in C is just bad for IoT learners. So I taught myself STM32 Blue Pill. The tiny development board contains a 32-bit Arm microcontroller by STMicro with proper ports for UART, I2C, SPI, USB, CAN, ... Costs only S$ 3 on Lazada ([5 pieces for S$ 16](https://www.lazada.sg/-i10699882-s13402282.html?urlFlag=true&mp=1))
 
-STM32 Blue Pill passes my "Taobao Benchmark" with flying colours, so no worries about commercialising your IoT gadget. Hard to find coding tutorials for STM32 Blue Pill, so I wrote many, many coding tutorials in C and Rust (and some translated into Chinese)...
+STM32 Blue Pill passes my "Taobao Benchmark" with flying colours, so no worries about commercialising your IoT gadget. Hard to find coding tutorials for STM32 Blue Pill, so I wrote many, many STM32 Blue Pill coding tutorials in C and Rust (and some translated into Chinese)...
 
 1. [_"Create your IoT gadget with Apache Mynewt and STM32 Blue Pill"_](https://medium.com/@ly.lee/create-your-iot-gadget-with-apache-mynewt-and-stm32-blue-pill-d689b3ca725?source=friends_link&sk=d511426d5a2217ebd06789b3eef7df54)
 
+1. [_"Visual Embedded Rust Programming with Visual Studio Code"_](https://medium.com/@ly.lee/visual-embedded-rust-programming-with-visual-studio-code-1bc1262e398c?source=friends_link&sk=222de63e45993aacd0db5a2e4b1f33c7)
+
+1. [_"連接 STM32F103C8T6 Blue Pill 開發板與 Sigfox 物聯網"_](https://medium.com/@ly.lee/%E9%80%A3%E6%8E%A5-stm32f103c8t6-blue-pill-%E9%96%8B%E7%99%BC%E6%9D%BF%E8%88%87-sigfox-%E7%89%A9%E8%81%AF%E7%B6%B2-9fc6b01e616a?source=friends_link&sk=58e0604e547a7603411297babc9ec92f)
+
 1. [_"Super Blue Pill — Like STM32 Blue Pill, But Better!"_](https://medium.com/swlh/super-blue-pill-like-stm32-blue-pill-but-better-6d341d9347da?source=friends_link&sk=956087171b9b9efcc484ea60b9c78c16)
+
+My choice for Microcontroller: __STM32 Blue Pill__ or __Nordic nRF52832__, which has Bluetooth and more RAM and ROM (512 KB flash ROM, 64 KB RAM)
+
+## [8] Embedded Programming
 
 C programming is hard... Especially C Pointers! MicroPython is too big to run on STM32 Blue Pill, my benchmark for high-volume, lost-cost microcontrollers. Can we squeeze Embedded JavaScript (Static TypeScript) into STM32 Blue Pill? No!
 
@@ -171,11 +179,11 @@ Or run Rust on top of an embedded OS like FreeRTOS...
 
 I decided to run Rust on top of Apache Mynewt embedded OS, because it's a modern, mature and reliable OS...
 
+1. [_"Rust Rocks NB-IoT! STM32 Blue Pill with Quectel BC95-G on Apache Mynewt"_](https://medium.com/@ly.lee/rust-rocks-nb-iot-stm32-blue-pill-with-quectel-bc95-g-on-apache-mynewt-ef62a7e28f7e?source=friends_link&sk=aaa21371f68a07c543066b6b89a760f0)
+
 1. [_"Hosting Embedded Rust apps on Apache Mynewt with STM32 Blue Pill"_](https://medium.com/@ly.lee/hosting-embedded-rust-apps-on-apache-mynewt-with-stm32-blue-pill-c86b119fe5f?source=friends_link&sk=f58f4cf6c608fded4b354063e474a93b)
 
 1. [_"Safer, Simpler Embedded Rust with Apache Mynewt on STM32 Blue Pill"_](https://medium.com/@ly.lee/safer-simpler-embedded-rust-with-apache-mynewt-on-stm32-blue-pill-d8fcb41969ac?source=friends_link&sk=16a27a4b9910aadcfcb9881c02d84adc)
-
-1. [_"Rust Rocks NB-IoT! STM32 Blue Pill with Quectel BC95-G on Apache Mynewt"_](https://medium.com/@ly.lee/rust-rocks-nb-iot-stm32-blue-pill-with-quectel-bc95-g-on-apache-mynewt-ef62a7e28f7e?source=friends_link&sk=aaa21371f68a07c543066b6b89a760f0)
 
 Rust has a steep learning curve. My advice: Start coding in Rust the simple, C-like way. Then learn the harder Rust parts (borrowing, generics, traits) and clean up your code. Maybe one day newbies can learn Rust through Visual Rust...
 
@@ -185,15 +193,15 @@ Rust has a steep learning curve. My advice: Start coding in Rust the simple, C-l
 
 1. [_"Visual Programming with Embedded Rust? Yes we can with Apache Mynewt and Google Blockly!"_](https://medium.com/@ly.lee/visual-programming-with-embedded-rust-yes-we-can-with-apache-mynewt-and-google-blockly-8b67ef7412d7?source=friends_link&sk=353fb92b6f20ebf885ff5c9be44fd6f2)
 
-My choice for Embedded Programming: __Rust with Apache Mynewt on STM32 Blue Pill or Nordic nRF52, plus Visual Studio Code__. Programming for drivers may still need C. I'm keen to roll out Visual Rust but it's hard for me to do this alone.  _Lemme know if you can help!_
+My choice for Embedded Programming: __Rust with Apache Mynewt on Visual Studio Code__. Programming for drivers may still need C. I'm keen to roll out Visual Rust but it's hard for me to do this alone.  _Lemme know if you can help!_
 
-## [8] Current Projects
+## [9] Current Projects
 
-Now that we have fixed every link of the IoT Chain, let's validate with new projects!
+Now that we have fixed every link of the IoT Chain, let's validate with new projects, the Lean and Agile way!
 
 ### PineTime Smart Watch
 
-Smart Watch based on Nordic nRF52 microcontroller. Colour 240x240 touchscreen, heart rate sensor, accelerometer, Bluetooth 5, 4 MB flash, US$ 22. Not available to general public yet because open-source firmware is still in development: TinyGo, Zephyr, Mynewt+Rust (done by me)
+Smart Watch based on Nordic nRF52832 microcontroller. Colour 240x240 touchscreen, heart rate sensor, accelerometer, Bluetooth 5, 4 MB flash, US$ 22. Not available to general public yet because open-source firmware is still in development: TinyGo, Zephyr, Mynewt+Rust (done by me)
 
 1. [_"Sneak Peek of PineTime Smart Watch… And why it’s perfect for teaching IoT"_](https://medium.com/@ly.lee/sneak-peek-of-pinetime-smart-watch-and-why-its-perfect-for-teaching-iot-81b74161c159?source=friends_link&sk=d9301466f5499bece3e7b638e99ec20d)
 
@@ -201,11 +209,17 @@ Smart Watch based on Nordic nRF52 microcontroller. Colour 240x240 touchscreen, h
 
 ### Bluetooth Mesh on Nordic nRF52
 
-Nordic nRF52 could become my preferred development board because it has Bluetooth and more RAM/ROM than STM32 Blue Pill. 32-bit Arm microcontroller, 512 KB flash ROM, 64 KB RAM. More expensive than STM32 Blue Pill of course.
+Nordic nRF52832 could become my preferred development board because it has Bluetooth and more RAM/ROM than STM32 Blue Pill. 32-bit Arm microcontroller, 512 KB flash ROM, 64 KB RAM. More expensive than STM32 Blue Pill of course ([S$ 10 on Taobao](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-16785486380.36.51a715a8nBZzhG&id=521330374834)). Because we are coding with Apache Mynewt OS and calling the same APIs for GPIO, I2C, SPI, etc so the code for STM32 Blue Pill also works on Nordic nRF52.
 
 1. [_"Coding nRF52 with Rust and Apache Mynewt on Visual Studio Code"_](https://medium.com/@ly.lee/coding-nrf52-with-rust-and-apache-mynewt-on-visual-studio-code-9521bcba6004?source=friends_link&sk=bb4e2523b922d0870259ab3fa696c7da)
 
 1. [_"Bluetooth Mesh with nRF52 and Apache Mynewt"_](https://medium.com/@ly.lee/bluetooth-mesh-with-nrf52-and-apache-mynewt-44823407c471?source=friends_link&sk=ac433fa04e13f75985927c37db1e2b10)
+
+Trivia: BBC micro:bit is based on Nordic nRF51, the weaker predecessor of nRF52. That's why micro:bit feels a little wonky sometimes...
+
+1. [_"Connect BBC micro:bit to Sigfox"_](https://medium.com/coinmonks/connect-bbc-micro-bit-to-sigfox-4d1603d19350?source=friends_link&sk=05ceafa731e7c82d92e68f6fa2a1d5bd)
+
+1. [_"連接 BBC micro:bit 與 Sigfox 物聯網"_](https://medium.com/@ly.lee/%E9%80%A3%E6%8E%A5-bbc-micro-bit-%E8%88%87-sigfox-%E7%89%A9%E8%81%AF%E7%B6%B2-36b0d453151e?source=friends_link&sk=ad9099aabefe2a09ad4956589773621f)
 
 ### RISC-V
 
