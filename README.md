@@ -49,7 +49,7 @@ Beyond that we have cloud-based machine learning, predictive analytics, ... Many
 
 ## [3] IoT Network
 
-I taught IoT with the Sigfox network in Singapore. The charges for sending and receiving messages are ridiculously low (few dollars per year per device). Though the messages are small (12 bytes) and infrequent (140 messages per day). Perfect for teaching IoT... 
+I used to teach IoT with the Sigfox network in Singapore. The charges for sending and receiving messages are ridiculously low (few dollars per year per device). Though the messages are small (12 bytes) and infrequent (140 messages per day). Perfect for teaching IoT... 
 
 1. [_"Sigfox Teacher Answers Your Questions"_](https://medium.com/@ly.lee/sigfox-teacher-answers-your-questions-7e47122716dc?source=friends_link&sk=7668c0b2ecc6333cd60ff8e536501ebd)
 
