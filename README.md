@@ -139,7 +139,7 @@ My choice for Real Time OS: __Apache Mynewt__
 
 ## [7] Microcontrollers
 
-Arduino Uno is a Dead End for IoT Education: Hard to create afforable commercial products at volume. (Same for BBC micro:bit.) And Bit-Banging code in C is just bad for IoT learners. So I taught myself STM32 Blue Pill. The tiny development board contains a 32-bit Arm microcontroller by STMicro with proper ports for UART, I2C, SPI, USB, CAN, ... Costs only S$ 3 on Lazada ([5 pieces for S$ 16](https://www.lazada.sg/-i10699882-s13402282.html?urlFlag=true&mp=1))
+Arduino Uno is a Dead End for IoT Education: Hard to create afforable commercial products at volume. (Same for BBC micro:bit.) And Bit-Banging in C is just bad for IoT learners. So I taught myself STM32 Blue Pill. The tiny development board contains a 32-bit Arm microcontroller by STMicro with proper ports for UART, I2C, SPI, USB, CAN, ... Costs only S$ 3 on Lazada ([5 pieces for S$ 16](https://www.lazada.sg/-i10699882-s13402282.html?urlFlag=true&mp=1))
 
 STM32 Blue Pill passes my "Taobao Benchmark" with flying colours, so no worries about commercialising your IoT gadget. Hard to find coding tutorials for STM32 Blue Pill, so I wrote many, many STM32 Blue Pill coding tutorials in C and Rust (and some translated into Chinese)...
 
@@ -185,7 +185,7 @@ I decided to run Rust on top of Apache Mynewt embedded OS, because it's a modern
 
 1. [_"Safer, Simpler Embedded Rust with Apache Mynewt on STM32 Blue Pill"_](https://medium.com/@ly.lee/safer-simpler-embedded-rust-with-apache-mynewt-on-stm32-blue-pill-d8fcb41969ac?source=friends_link&sk=16a27a4b9910aadcfcb9881c02d84adc)
 
-Rust has a steep learning curve. My advice: Start coding in Rust the simple, C-like way. Then learn the harder Rust parts (borrowing, generics, traits) and clean up your code. Maybe one day newbies can learn Rust through Visual Rust...
+Rust has a steep learning curve. My advice: Start coding in Rust the simple, C-like way. Then learn the harder Rust parts (borrowing, generics, traits, macros) and clean up your code. Maybe one day newbies can learn Rust through Visual Rust...
 
 1. [_"Visual Embedded Rust Programming with Visual Studio Code"_](https://medium.com/@ly.lee/visual-embedded-rust-programming-with-visual-studio-code-1bc1262e398c?source=friends_link&sk=222de63e45993aacd0db5a2e4b1f33c7)
 
@@ -197,11 +197,11 @@ My choice for Embedded Programming: __Rust with Apache Mynewt on Visual Studio C
 
 ## [9] Current Projects
 
-Now that we have fixed every link of the IoT Chain, let's validate with new projects, the Lean and Agile way!
+Now that we have fixed every link of the IoT Chain, let's validate with new projects, the Lean and Agile Way!
 
 ### PineTime Smart Watch
 
-Smart Watch based on Nordic nRF52832 microcontroller. Colour 240x240 touchscreen, heart rate sensor, accelerometer, Bluetooth 5, 4 MB flash, US$ 22. Not available to general public yet because open-source firmware is still in development: TinyGo, Zephyr, Mynewt+Rust (done by me)
+Smart Watch based on Nordic nRF52832 microcontroller. Colour 240x240 touchscreen, heart rate sensor, accelerometer, Bluetooth 5, 4 MB flash, US$ 22. Not available to general public yet because open-source firmware is still in development: TinyGo, Zephyr, Mynewt+Rust (I'm now coding this, helped by an open-source volunteer in Germany)
 
 1. [_"Sneak Peek of PineTime Smart Watch… And why it’s perfect for teaching IoT"_](https://medium.com/@ly.lee/sneak-peek-of-pinetime-smart-watch-and-why-its-perfect-for-teaching-iot-81b74161c159?source=friends_link&sk=d9301466f5499bece3e7b638e99ec20d)
 
@@ -223,7 +223,7 @@ Trivia: BBC micro:bit is based on Nordic nRF51, the weaker predecessor of nRF52.
 
 ### RISC-V
 
-Alternative to Arm microcontrollers. Many cheap development boards coming from China. Some of the boards even work like STM32 Blue Pill (GD32 VF103). But lacks proper OS drivers and coding tools...
+Alternative to Arm microcontrollers. Many cheap development boards coming from China. Some of the boards even work like STM32 Blue Pill (GD32 VF103). But they lack proper OS drivers and coding tools...
 
 1. [_"Porting Apache Mynewt OS to GigaDevice GD32 VF103 on RISC-V"_](https://medium.com/@ly.lee/porting-apache-mynewt-os-to-gigadevice-gd32-vf103-on-risc-v-4054a5922493?source=friends_link&sk=215cd06186d912277d0469224666d60d)
 
