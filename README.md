@@ -107,6 +107,8 @@ Apache Mynewt is an open-source Real Time Operating System that has built-in dri
 
 1. [_"Create your IoT gadget with Apache Mynewt and STM32 Blue Pill"_](https://medium.com/@ly.lee/create-your-iot-gadget-with-apache-mynewt-and-stm32-blue-pill-d689b3ca725?source=friends_link&sk=d511426d5a2217ebd06789b3eef7df54)
 
+Lesson Learnt: When choosing your IoT device firmware platform, make sure it has drivers for your sensors and transceivers, present and future!
+
 ## [6] Real Time Operating Systems
 
 For most IoT gadgets we need to transmit sensor data while reading sensors concurrently. This code can get very messy...
@@ -121,7 +123,7 @@ We need proper multitasking. I started with cocoOS, a lightweight cooperative (c
 
 1. [_"Juggling STM32 Blue Pill For Arduino Jugglers"_](https://medium.com/coinmonks/juggling-stm32-blue-pill-for-arduino-jugglers-edf6820dc808?source=friends_link&sk=7e812ce3062e69447d8ada7416f1ba9f)
 
-With a cooperative task scheduler like cocoOS, the firmware needs to be designed carefully before building. Which could be a problem if you're not an embedded software architect. So I switched to a Real Time Operating System that supports preemptive multitasking: Apache Mynewt...
+With a cooperative task scheduler like cocoOS, the firmware needs to be designed carefully before building. Which could be a problem if you're not an embedded software architect. So I switched to an open source Real Time Operating System that supports preemptive multitasking: [Apache Mynewt](https://mynewt.apache.org/)...
 
 1. [_"Create your IoT gadget with Apache Mynewt and STM32 Blue Pill"_](https://medium.com/@ly.lee/create-your-iot-gadget-with-apache-mynewt-and-stm32-blue-pill-d689b3ca725?source=friends_link&sk=d511426d5a2217ebd06789b3eef7df54)
 
@@ -129,9 +131,17 @@ With a cooperative task scheduler like cocoOS, the firmware needs to be designed
 
 1. [_"Build Your IoT Sensor Network — STM32 Blue Pill + nRF24L01 + ESP8266 + Apache Mynewt + thethings.io"_](https://medium.com/@ly.lee/build-your-iot-sensor-network-stm32-blue-pill-nrf24l01-esp8266-apache-mynewt-thethings-io-ca7486523f5d?source=friends_link&sk=e49514a7e616d4ff931dd24329a82ce0)
 
+1. [_"Low Power NB-IoT on STM32 Blue Pill with Apache Mynewt and Embedded Rust"_](https://medium.com/@ly.lee/low-power-nb-iot-on-stm32-blue-pill-with-apache-mynewt-and-embedded-rust-cef5a3ecdd90?source=friends_link&sk=e232e68dc7c91dd4397e96d7dbde543a)
+
+Mynewt is easy to customise in C, I created my own drivers for NB-IoT, ESP8266, low power support. Built-in support for CoAP, JSON and CBOR, perfect for NB-IoT. Small footprint, runs well on STM32 Blue Pill (which has 64 KB Flash ROM, 20 KB RAM) and Nordic nRF52. Also check out [Zephyr](https://www.zephyrproject.org/), a modern open source RTOS that is supported by the microcontroller companies: STMicro, Nordic, NXP, ...
+
+My choice for embedded OS: Apache Mynewt
+
 ## [7] Embedded Programming
 
-Arduino Uno is a Dead End for IoT Education: Hard to create afforable commercial products at volume. (Same for BBC micro:bit.) And Bit-Banging code in C is just bad for learners. So I taught myself STM32 Blue Pill...
+Arduino Uno is a Dead End for IoT Education: Hard to create afforable commercial products at volume. (Same for BBC micro:bit.) And Bit-Banging code in C is just bad for IoT learners. So I taught myself STM32 Blue Pill. The tiny development board contains a 32-bit microcontroller by STMicro with proper ports for UART, I2C, SPI, USB, CAN, ... Costs only S$ 3 on Lazada ([5 pieces for S$ 16](https://www.lazada.sg/-i10699882-s13402282.html?urlFlag=true&mp=1))
+
+STM32 Blue Pill passes my "Taobao Benchmark" with flying colours, so no worries about commercialising your IoT gadget. Hard to find coding tutorials for STM32 Blue Pill, so I wrote many, many coding tutorials in C and Rust (and some translated into Chinese)...
 
 1. [_"Create your IoT gadget with Apache Mynewt and STM32 Blue Pill"_](https://medium.com/@ly.lee/create-your-iot-gadget-with-apache-mynewt-and-stm32-blue-pill-d689b3ca725?source=friends_link&sk=d511426d5a2217ebd06789b3eef7df54)
 
@@ -175,11 +185,15 @@ Rust has a steep learning curve. Maybe newbies can learn Rust through Visual Rus
 
 1. [_"Visual Programming with Embedded Rust? Yes we can with Apache Mynewt and Google Blockly!"_](https://medium.com/@ly.lee/visual-programming-with-embedded-rust-yes-we-can-with-apache-mynewt-and-google-blockly-8b67ef7412d7?source=friends_link&sk=353fb92b6f20ebf885ff5c9be44fd6f2)
 
+My choice for Embedded Programming: Rust with Apache Mynewt on STM32 Blue Pill or Nordic nRF52
+
 ## [8] Current Projects
 
-Now that we have fixed every link of the IoT Chain, let's validate!
+Now that we have fixed every link of the IoT Chain, let's validate with new projects!
 
 ### PineTime Smart Watch
+
+Smart Watch based on Nordic nRF52. Colour 240x240 touchscreen, heart rate sensor, accelerometer, Bluetooth 5, US$ 22. Not available to general public yet because open-source firmware is still in development: TinyGo, Zephyr, Mynewt+Rust (done by me)
 
 1. [_"Sneak Peek of PineTime Smart Watch… And why it’s perfect for teaching IoT"_](https://medium.com/@ly.lee/sneak-peek-of-pinetime-smart-watch-and-why-its-perfect-for-teaching-iot-81b74161c159?source=friends_link&sk=d9301466f5499bece3e7b638e99ec20d)
 
