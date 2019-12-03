@@ -7,15 +7,15 @@
 
 I'm [Lup Yuen](https://lupyuen.github.io) and I teach IoT...
 
-1. [_"I Teach IoT. Here’s what you’ll learn"_](https://medium.com/@ly.lee/i-teach-iot-heres-what-you-ll-learn-3e0d1b997dd0?source=friends_link&sk=ec31991f7245ccde1200dd950196a5e7)
+- [_"I Teach IoT. Here’s what you’ll learn"_](https://medium.com/@ly.lee/i-teach-iot-heres-what-you-ll-learn-3e0d1b997dd0?source=friends_link&sk=ec31991f7245ccde1200dd950196a5e7)
 
 I teach IoT because...
 
-1. [_"IoT is a Bad Word"_](https://medium.com/@ly.lee/iot-is-a-bad-word-9003d9fab638?source=friends_link&sk=f7d58ebca338f326b6be8dcb79c7d6f5)
+- [_"IoT is a Bad Word"_](https://medium.com/@ly.lee/iot-is-a-bad-word-9003d9fab638?source=friends_link&sk=f7d58ebca338f326b6be8dcb79c7d6f5)
 
-IoT is difficult because... Just see the expansive scope in the sketch above! And we are creating too many expensive IoT gadgets at low volume that don't solve any business problems... "Technology Waiting For A Problem To Solve"
+IoT is difficult because... Just look at the expansive scope in the sketch above! Every single link in the IoT Chain must be executed correctly. Or the whole IoT product falls apart. We are also creating too many expensive IoT gadgets that don't solve any business problems... "Technology Waiting For A Problem To Solve"
 
-5 years ago I decided to fix every link in the IoT chain so that we can create really useful and affordable IoT gadgets... The Lean and Agile Way. Let's start backwards (right to left)...
+5 years ago I decided to fix every link in the IoT Chain so that we can create really useful and affordable IoT gadgets, the Lean and Agile Way. Let's study the IoT Chain backwards (right to left)...
 
 ## [2] IoT Cloud
 
@@ -35,13 +35,13 @@ thethings.io, which has simple useful dashboards and easy integration with JavaS
 
 1. [_"Realtime sensor data processing with thethings.io and Amazon Web Services Kinesis"_](https://medium.com/coinmonks/realtime-sensor-data-processing-with-thethings-io-and-amazon-web-services-kinesis-e12ebb022106?source=friends_link&sk=a57d58d346c283c79699efe384bca299)
 
-Google Cloud, probably the cheapest cloud out of the big 3 (AWS, Azure, Google)...
+Google Cloud, probably the cheapest cloud out of the big 3 clouds (AWS, Azure, Google)...
 
-1. [_"How To Build Your Sigfox Server (Version 1.0)"_](https://medium.com/@ly.lee/how-to-build-your-sigfox-server-version-1-0-6763732692fd?source=friends_link&sk=641f65c458ec59fa27dddbe7735b118a)
+- [_"How To Build Your Sigfox Server (Version 1.0)"_](https://medium.com/@ly.lee/how-to-build-your-sigfox-server-version-1-0-6763732692fd?source=friends_link&sk=641f65c458ec59fa27dddbe7735b118a)
 
 Alibaba Cloud, if you need something even cheaper, or if your IoT gadget must operate in China (because other clouds may be blocked)...
 
-1. [_"First Impressions of Alibaba Cloud (Aliyun)"_](https://medium.com/@ly.lee/first-impressions-of-alibaba-cloud-aliyun-688dc46fa9b8?source=friends_link&sk=0685f5028f4ce9575dfae9cc9515143d)
+- [_"First Impressions of Alibaba Cloud (Aliyun)"_](https://medium.com/@ly.lee/first-impressions-of-alibaba-cloud-aliyun-688dc46fa9b8?source=friends_link&sk=0685f5028f4ce9575dfae9cc9515143d)
 
 Also check out [Grafana](https://grafana.com/), the open source dashboard tool, and [Prometheus](https://prometheus.io/), the open source time-series database. Both are cloud analytics tools that were created for enterprises but work well for IoT too.
 
@@ -63,7 +63,7 @@ I taught IoT with the Sigfox network in Singapore. The charges for sending and r
 
 ...Except that the Sigfox developer kits are expensive, bulky (Arduino Shield), and limited in choice. Impossible to create a cheap prototype of an IoT gadget and commercialise for mass production. (Remember that Sigfox network is not available in China, the manufacturing powerhouse.) Here's my painful attempt (50% success rate)...
 
-1. [_"Making my first ever PCB with Seeed Fusion PCB assembly service"_](https://medium.com/coinmonks/making-my-first-ever-pcb-with-seeed-fusion-pcb-assembly-service-9af5736016b3?source=friends_link&sk=4a66b1086f3232f2022c9c6a3bff0523)
+- [_"Making my first ever PCB with Seeed Fusion PCB assembly service"_](https://medium.com/coinmonks/making-my-first-ever-pcb-with-seeed-fusion-pcb-assembly-service-9af5736016b3?source=friends_link&sk=4a66b1086f3232f2022c9c6a3bff0523)
 
 And for some odd reason, government agencies and companies were reluctant to test IoT concepts on Sigfox even though it's available nationwide ("non-standard"). Incredibly frustrated, I gave up and moved on. (Remember: Lean and Agile!)
 
@@ -85,9 +85,9 @@ My first experience creating hardware...
 
 Learnt that making IoT gagdets at low volume is very expensive. This is the "Minimum Order Quantity" problem. Always repurpose somebody else's hardware whenever possible, don't create new hardware! Make up for it with really good firmware.
 
-1. [_"Why electronic does not mean china and why 5$ IoT is for Chinese?"_](https://www.disk91.com/2017/news/technologies/why-electronics-does-not-means-china-and-why-5-iot-is-for-china/) by Paul Pinault
+- [_"Why electronic does not mean china and why 5$ IoT is for Chinese?"_](https://www.disk91.com/2017/news/technologies/why-electronics-does-not-means-china-and-why-5-iot-is-for-china/) by Paul Pinault
 
-Best benchmark for checking whether a particular technology (like NB-IoT) is mature and cheap to manufacture (in China): Just search Taobao. Look at the sheer number of affordable NB-IoT Developer Kits available, some even have programmable STM32 microcontrollers and onboard GPS!
+Best benchmark for checking whether a particular technology (like NB-IoT) is mature and cheap to manufacture (in China): Just search Taobao. Look at the sheer number of affordable NB-IoT Developer Kits available, some even have programmable STM32 microcontrollers and onboard GPS! Most of these NB-IoT developer kits are backed by China telcos.
 
 1. [_"Quick Scan of NB-IoT STM32 Dev Kits on Taobao"_](https://docs.google.com/document/d/1V96zQc8PbxuxEwsdd3wzEb7SxpDhbSsOOP6faiFPfzo/edit?usp=sharing)
 
@@ -95,17 +95,17 @@ Best benchmark for checking whether a particular technology (like NB-IoT) is mat
 
 1. [_"Build an NB-IoT GPS Tracker on STM32 L476 with Apache Mynewt and Embedded Rust"_](https://medium.com/@ly.lee/build-an-nb-iot-gps-tracker-on-stm32-l476-with-apache-mynewt-and-embedded-rust-8c095a925546?source=friends_link&sk=f3e802795d4fd7d569f0d67679e8c9e6)
 
-My choice today for IoT Network: NB-IoT. Works well worldwide with few gotchas. Strangely low adoption for such good technology. But please don't ask your telco for a trial NB-IoT SIM (ask me why)
+My choice today for IoT Network: __NB-IoT__. Works well worldwide (including China) with few gotchas. Strangely low adoption for such good technology. But please don't ask your telco for a trial NB-IoT SIM (ask me why)
 
 ## [5] Sensors
 
 Best thing about Arduino: Arduino drivers are available for all kinds of sensors. (Even though many Arduino drivers use dodgy Bit Banging.) When we move out of Arduino, we face problems finding drivers...
 
-1. [_"Watch STM32 Blue Pill Juggle Two SPI Sensors With DMA"_](https://medium.com/coinmonks/watch-stm32-blue-pill-juggle-two-spi-sensors-with-dma-20cd1aa89869?source=friends_link&sk=eea71070ce6d9aea3a6108e882749a99)
+- [_"Watch STM32 Blue Pill Juggle Two SPI Sensors With DMA"_](https://medium.com/coinmonks/watch-stm32-blue-pill-juggle-two-spi-sensors-with-dma-20cd1aa89869?source=friends_link&sk=eea71070ce6d9aea3a6108e882749a99)
 
 Apache Mynewt is an open-source Real Time Operating System that has built-in drivers for many types of sensors. So I shifted from Arduino and cocoOS to Mynewt...
 
-1. [_"Create your IoT gadget with Apache Mynewt and STM32 Blue Pill"_](https://medium.com/@ly.lee/create-your-iot-gadget-with-apache-mynewt-and-stm32-blue-pill-d689b3ca725?source=friends_link&sk=d511426d5a2217ebd06789b3eef7df54)
+- [_"Create your IoT gadget with Apache Mynewt and STM32 Blue Pill"_](https://medium.com/@ly.lee/create-your-iot-gadget-with-apache-mynewt-and-stm32-blue-pill-d689b3ca725?source=friends_link&sk=d511426d5a2217ebd06789b3eef7df54)
 
 Lesson Learnt: When choosing your IoT device firmware platform, make sure it has drivers for your sensors and transceivers, present and future!
 
@@ -113,7 +113,7 @@ Lesson Learnt: When choosing your IoT device firmware platform, make sure it has
 
 For most IoT gadgets we need to transmit sensor data while reading sensors concurrently. This code can get very messy...
 
-1. [_"Multitasking on the Arduino with a Finite State Machine – And why you’ll need it for Sigfox Downlink"_](https://medium.com/coinmonks/multitasking-on-the-arduino-with-a-finite-state-machine-and-why-youll-need-it-for-sigfox-d52dafc55d8e?source=friends_link&sk=ccb0128b230b6d678831b80100df43e8)
+- [_"Multitasking on the Arduino with a Finite State Machine – And why you’ll need it for Sigfox Downlink"_](https://medium.com/coinmonks/multitasking-on-the-arduino-with-a-finite-state-machine-and-why-youll-need-it-for-sigfox-d52dafc55d8e?source=friends_link&sk=ccb0128b230b6d678831b80100df43e8)
 
 We need proper multitasking. I started with cocoOS, a lightweight cooperative (coroutine) task scheduler for Arduino and STM32 platforms...
 
@@ -135,7 +135,7 @@ With a cooperative task scheduler like cocoOS, the firmware needs to be designed
 
 Mynewt is easy to customise in C, I created my own drivers for NB-IoT, ESP8266, low power support. Built-in support for CoAP, JSON and CBOR, perfect for NB-IoT. Small footprint, runs well on STM32 Blue Pill (which has 64 KB Flash ROM, 20 KB RAM) and Nordic nRF52. Also check out [Zephyr](https://www.zephyrproject.org/), a modern open source RTOS that is supported by the microcontroller companies: STMicro, Nordic, NXP, ...
 
-My choice for embedded OS: Apache Mynewt
+My choice for embedded OS: __Apache Mynewt__
 
 ## [7] Embedded Programming
 
@@ -163,11 +163,11 @@ C programming is hard... Especially C Pointers! MicroPython is too big to run on
 
 Why not switch from C to Rust, the safer, modern alternative? The Rust compiler stops you from using bad pointers (unless you mark it `unsafe`). It compiles into efficient Arm machine code. Works well with C libraries and drivers (like Mynewt). And well supported by open-source coding tools like Visual Studio Code. We can run pure Embedded Rust...
 
-1. [_"Coding the STM32 Blue Pill with Rust and Visual Studio Code"_](https://medium.com/coinmonks/coding-the-stm32-blue-pill-with-rust-and-visual-studio-code-b21615d8a20?source=friends_link&sk=9ca2ff6ad73ae7330bc122d73e94e83f)
+- [_"Coding the STM32 Blue Pill with Rust and Visual Studio Code"_](https://medium.com/coinmonks/coding-the-stm32-blue-pill-with-rust-and-visual-studio-code-b21615d8a20?source=friends_link&sk=9ca2ff6ad73ae7330bc122d73e94e83f)
 
 Or run Rust on top of an embedded OS like FreeRTOS...
 
-1. [_"Running Rust and FreeRTOS on the PADI IoT Stamp"_](https://medium.com/coinmonks/running-rust-and-freertos-on-the-padi-iot-stamp-fb36c5ef4844?source=friends_link&sk=e89306e593d2781bbb272c0779eb5c24)
+- [_"Running Rust and FreeRTOS on the PADI IoT Stamp"_](https://medium.com/coinmonks/running-rust-and-freertos-on-the-padi-iot-stamp-fb36c5ef4844?source=friends_link&sk=e89306e593d2781bbb272c0779eb5c24)
 
 I decided to run Rust on top of Apache Mynewt embedded OS, because it's a modern, mature and reliable OS...
 
@@ -185,7 +185,7 @@ Rust has a steep learning curve. My advice: Start coding in Rust the simple, C-l
 
 1. [_"Visual Programming with Embedded Rust? Yes we can with Apache Mynewt and Google Blockly!"_](https://medium.com/@ly.lee/visual-programming-with-embedded-rust-yes-we-can-with-apache-mynewt-and-google-blockly-8b67ef7412d7?source=friends_link&sk=353fb92b6f20ebf885ff5c9be44fd6f2)
 
-My choice for Embedded Programming: Rust with Apache Mynewt on STM32 Blue Pill or Nordic nRF52, plus Visual Studio Code. Programming for drivers may still need C. I'm keen to roll out Visual Rust but it's hard for me to do this alone.  Lemme know if you can help!
+My choice for Embedded Programming: __Rust with Apache Mynewt on STM32 Blue Pill or Nordic nRF52, plus Visual Studio Code__. Programming for drivers may still need C. I'm keen to roll out Visual Rust but it's hard for me to do this alone.  _Lemme know if you can help!_
 
 ## [8] Current Projects
 
