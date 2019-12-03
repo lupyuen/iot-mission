@@ -139,7 +139,7 @@ My choice for embedded OS: Apache Mynewt
 
 ## [7] Embedded Programming
 
-Arduino Uno is a Dead End for IoT Education: Hard to create afforable commercial products at volume. (Same for BBC micro:bit.) And Bit-Banging code in C is just bad for IoT learners. So I taught myself STM32 Blue Pill. The tiny development board contains a 32-bit microcontroller by STMicro with proper ports for UART, I2C, SPI, USB, CAN, ... Costs only S$ 3 on Lazada ([5 pieces for S$ 16](https://www.lazada.sg/-i10699882-s13402282.html?urlFlag=true&mp=1))
+Arduino Uno is a Dead End for IoT Education: Hard to create afforable commercial products at volume. (Same for BBC micro:bit.) And Bit-Banging code in C is just bad for IoT learners. So I taught myself STM32 Blue Pill. The tiny development board contains a 32-bit Arm microcontroller by STMicro with proper ports for UART, I2C, SPI, USB, CAN, ... Costs only S$ 3 on Lazada ([5 pieces for S$ 16](https://www.lazada.sg/-i10699882-s13402282.html?urlFlag=true&mp=1))
 
 STM32 Blue Pill passes my "Taobao Benchmark" with flying colours, so no worries about commercialising your IoT gadget. Hard to find coding tutorials for STM32 Blue Pill, so I wrote many, many coding tutorials in C and Rust (and some translated into Chinese)...
 
@@ -193,25 +193,31 @@ Now that we have fixed every link of the IoT Chain, let's validate with new proj
 
 ### PineTime Smart Watch
 
-Smart Watch based on Nordic nRF52. Colour 240x240 touchscreen, heart rate sensor, accelerometer, Bluetooth 5, US$ 22. Not available to general public yet because open-source firmware is still in development: TinyGo, Zephyr, Mynewt+Rust (done by me)
+Smart Watch based on Nordic nRF52 microcontroller. Colour 240x240 touchscreen, heart rate sensor, accelerometer, Bluetooth 5, 4 MB flash, US$ 22. Not available to general public yet because open-source firmware is still in development: TinyGo, Zephyr, Mynewt+Rust (done by me)
 
 1. [_"Sneak Peek of PineTime Smart Watch… And why it’s perfect for teaching IoT"_](https://medium.com/@ly.lee/sneak-peek-of-pinetime-smart-watch-and-why-its-perfect-for-teaching-iot-81b74161c159?source=friends_link&sk=d9301466f5499bece3e7b638e99ec20d)
 
 1. [_"Building a Rust Driver for PineTime’s Touch Controller"_](https://medium.com/@ly.lee/building-a-rust-driver-for-pinetimes-touch-controller-cbc1a5d5d3e9?source=friends_link&sk=d8cf73fc943d9c0e960627d768f309cb)
 
-### RISC-V
-
-1. [_"Porting Apache Mynewt OS to GigaDevice GD32 VF103 on RISC-V"_](https://medium.com/@ly.lee/porting-apache-mynewt-os-to-gigadevice-gd32-vf103-on-risc-v-4054a5922493?source=friends_link&sk=215cd06186d912277d0469224666d60d)
-
-1. [_"Hey GD32 VF103 on RISC-V: I surrender… For now"_](https://medium.com/@ly.lee/hey-gd32-vf103-on-risc-v-i-surrender-for-now-d39d0c7b0001?source=friends_link&sk=c0504ac574bf571219fabe174eef4de5)
-
 ### Bluetooth Mesh on Nordic nRF52
+
+Nordic nRF52 could become my preferred development board because it has Bluetooth and more RAM/ROM than STM32 Blue Pill. 32-bit Arm microcontroller, 512 KB flash ROM, 64 KB RAM. More expensive than STM32 Blue Pill of course.
 
 1. [_"Coding nRF52 with Rust and Apache Mynewt on Visual Studio Code"_](https://medium.com/@ly.lee/coding-nrf52-with-rust-and-apache-mynewt-on-visual-studio-code-9521bcba6004?source=friends_link&sk=bb4e2523b922d0870259ab3fa696c7da)
 
 1. [_"Bluetooth Mesh with nRF52 and Apache Mynewt"_](https://medium.com/@ly.lee/bluetooth-mesh-with-nrf52-and-apache-mynewt-44823407c471?source=friends_link&sk=ac433fa04e13f75985927c37db1e2b10)
 
+### RISC-V
+
+Alternative to Arm microcontrollers. Many cheap development boards coming from China. Some of the boards even work like STM32 Blue Pill (GD32 VF103). But lacks proper OS drivers and coding tools...
+
+1. [_"Porting Apache Mynewt OS to GigaDevice GD32 VF103 on RISC-V"_](https://medium.com/@ly.lee/porting-apache-mynewt-os-to-gigadevice-gd32-vf103-on-risc-v-4054a5922493?source=friends_link&sk=215cd06186d912277d0469224666d60d)
+
+1. [_"Hey GD32 VF103 on RISC-V: I surrender… For now"_](https://medium.com/@ly.lee/hey-gd32-vf103-on-risc-v-i-surrender-for-now-d39d0c7b0001?source=friends_link&sk=c0504ac574bf571219fabe174eef4de5)
+
 ### FPGA
+
+Lots of potential for creating ultra-low power IoT gadgets. But FPGA programming is way too hard! Maybe it needs a visual programming tool.
 
 1. [_"Why use FPGA for IoT? Here’s what I think…"_](https://medium.com/coinmonks/why-use-fpga-for-iot-heres-what-i-think-e513772514d6?source=friends_link&sk=0ced124708f50b7be478f25198237f5e)
 
